@@ -1,0 +1,11 @@
+{
+    "library_name": "topology_lib_echo",
+    "author": "Hewlett Packard Enterprise Development LP",
+    "email": "hpe-networking@lists.hp.com",
+    "repo_url": "https://github.com/HPENetworking/topology_lib_echo",
+    "doc_url": "https://github.com/HPENetworking/topology_lib_echo/tree/master/doc",
+    "project_name": "echo Communication Library for Topology",
+    "short_description": "An echo command library.",
+    "year": "2016",
+    "version": "0.1.0"
+}
