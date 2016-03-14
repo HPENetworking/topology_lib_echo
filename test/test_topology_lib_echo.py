@@ -36,10 +36,16 @@ def test_echo():
     """
     node_mock = Mock()
 
-    echo(node_mock, 'I am echoed!', True, False, shell='bash')
+    echo(
+        node_mock, 'I am echoed!', trailing_newline=True,
+        backslash_escape=False, shell='bash'
+    )
 
     node_mock.assert_called_with('echo "I am echoed!"', shell='bash')
 
-    echo(node_mock, 'I am echoed!', False, True, shell='bash')
+    echo(
+        node_mock, 'I am echoed!', trailing_newline=False,
+        backslash_escape=True, shell='bash'
+    )
 
     node_mock.assert_called_with('echo -n -e "I am echoed!"', shell='bash')
